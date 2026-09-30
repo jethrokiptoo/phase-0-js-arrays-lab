@@ -1,5 +1,31 @@
 // Write your code here
 
+const products = ["laptop", "phone", "headphones", "monitor"];
+
+
+
+function displayFirstProduct() {
+    console.log(products[0]);
+}
+
+
+
+function addProduct(productName) {
+    products.push(productName);
+}
+
+
+
+function changeProductName(position, newName) {
+    products[position] = newName;
+}
+
+
+
+function removeLastProduct() {
+    products.pop();
+}
+
 
 
 // Export the necessary parts for testing
@@ -10,3 +36,6 @@ module.exports = {
   removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
   products
 };
+
+
+
